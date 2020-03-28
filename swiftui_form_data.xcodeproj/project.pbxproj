@@ -13,6 +13,10 @@
 		E64AE7CF242FB35800F62B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64AE7CE242FB35800F62B25 /* Assets.xcassets */; };
 		E64AE7D2242FB35800F62B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64AE7D1242FB35800F62B25 /* Preview Assets.xcassets */; };
 		E64AE7D5242FB35800F62B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64AE7D3242FB35800F62B25 /* LaunchScreen.storyboard */; };
+		E64AE7DF242FB63700F62B25 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64AE7DE242FB63700F62B25 /* ProfileModel.swift */; };
+		E64AE7E1242FB66700F62B25 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64AE7E0242FB66700F62B25 /* ProfileScreen.swift */; };
+		E64AE7E6242FD54A00F62B25 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64AE7E5242FD54A00F62B25 /* UserService.swift */; };
+		E64AE7E9242FDE2E00F62B25 /* ThemeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64AE7E8242FDE2E00F62B25 /* ThemeTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E64AE7D1242FB35800F62B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E64AE7D4242FB35800F62B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64AE7D6242FB35800F62B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64AE7DE242FB63700F62B25 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		E64AE7E0242FB66700F62B25 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		E64AE7E5242FD54A00F62B25 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E64AE7E8242FDE2E00F62B25 /* ThemeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 		E64AE7C7242FB35700F62B25 /* swiftui_form_data */ = {
 			isa = PBXGroup;
 			children = (
-				E64AE7C8242FB35700F62B25 /* AppDelegate.swift */,
+				E64AE7E7242FDE1500F62B25 /* Styles */,
+				E64AE7E4242FD52A00F62B25 /* Services */,
+				E64AE7DC242FB5E100F62B25 /* Models */,
+				E64AE7DD242FB5F000F62B25 /* Screens */,
 				E64AE7CA242FB35700F62B25 /* SceneDelegate.swift */,
+				E64AE7C8242FB35700F62B25 /* AppDelegate.swift */,
 				E64AE7CC242FB35700F62B25 /* ContentView.swift */,
 				E64AE7CE242FB35800F62B25 /* Assets.xcassets */,
 				E64AE7D3242FB35800F62B25 /* LaunchScreen.storyboard */,
@@ -73,6 +85,38 @@
 				E64AE7D1242FB35800F62B25 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E64AE7DC242FB5E100F62B25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E64AE7DE242FB63700F62B25 /* ProfileModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E64AE7DD242FB5F000F62B25 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E64AE7E0242FB66700F62B25 /* ProfileScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E64AE7E4242FD52A00F62B25 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E64AE7E5242FD54A00F62B25 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E64AE7E7242FDE1500F62B25 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E64AE7E8242FDE2E00F62B25 /* ThemeTextField.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64AE7C9242FB35700F62B25 /* AppDelegate.swift in Sources */,
+				E64AE7E9242FDE2E00F62B25 /* ThemeTextField.swift in Sources */,
+				E64AE7DF242FB63700F62B25 /* ProfileModel.swift in Sources */,
+				E64AE7E6242FD54A00F62B25 /* UserService.swift in Sources */,
 				E64AE7CB242FB35700F62B25 /* SceneDelegate.swift in Sources */,
 				E64AE7CD242FB35700F62B25 /* ContentView.swift in Sources */,
+				E64AE7E1242FB66700F62B25 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
